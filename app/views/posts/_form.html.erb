@@ -1,0 +1,15 @@
+<style>
+body {
+    background-color : #FFF29E;
+    font-style: italic;
+    font-color: black;
+    text-align: center;
+	}
+</style>
+
+
+<%= form_for(@post) do |f| %>
+<%= f.text_field :title %>
+<%= f.text_area :content %>
+<%= f.submit :'제출' %>
+<% end %>
